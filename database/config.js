@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const dbConnection = async() => {
   try {
-    console.log("process.env.DB_CONECTION", process.env.DB_CONECTION);
-    const connection = process.env.DB_CONECTION || "";
+    console.log("process.env.DB_CONNECTION", process.env.DB_CONNECTION);
+    const connection = process.env.DB_CONNECTION || "";
     if(connection == "") {
       console.log("CADENA DE CONEXION FALTANTE....");
     }
